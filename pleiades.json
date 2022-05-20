@@ -1,5 +1,4 @@
 {
     "version": "4.7.3a",
-    "url": "https://github.com/alox-ookawa/scoop-edinet/releases/download/v1.0.0/pleiades.zip",
-    "bin": "eclipse\\eclipse.exe"
+    "url": "https://github.com/aloxjp/scoop-edinet/releases/download/v1.0.0/pleiades.zip",
 }

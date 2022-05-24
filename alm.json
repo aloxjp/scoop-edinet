@@ -1,4 +1,5 @@
 {
     "version": "1.0.0",
-    "url": "https://github.com/aloxjp/scoop-edinet/releases/download/v1.0.0/ALM.zip"
+    "url": "https://github.com/aloxjp/scoop-edinet/releases/download/v1.0.0/ALM.zip",
+    "bin": "ALM\\alm.ps1"
 }

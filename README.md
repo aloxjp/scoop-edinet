@@ -34,3 +34,17 @@ scoopもbucketをgitでバージョン管理しています。
 これもscoopでインストールできます。
 
 	PS > scoop install git
+
+## このbucketをscoop参照先に追加
+
+この設定をすることで、 `scoop install <app>` でこのリポジトリにあるアプリケーションをインストールすることができるようになります。
+
+	PS > scoop bucket add alox-edinet https://github.com/aloxjp/scoop-edinet
+
+## このbucketをscoop参照先から削除
+
+必要なアプリケーションのインストールが終わったら、bucketを削除してください。
+次回、再びこのbucketをscoop参照先に追加することで、このbucketに登録されているアプリケーションの最新バージョンを参照することができます。
+
+	PS > scoop bucket rm alox-edinet
+

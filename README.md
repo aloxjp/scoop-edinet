@@ -43,7 +43,7 @@ scoopもbucketをgitでバージョン管理しています。
 
 ## このbucketをscoop参照先から削除
 
-必要なアプリケーションのインストールが終わったら、bucketを削除してください。
+必要なアプリケーションのインストールが終わったら、bucketを削除してください。  
 次回、再びこのbucketをscoop参照先に追加することで、このbucketに登録されているアプリケーションの最新バージョンを参照することができます。
 
 	PS > scoop bucket rm alox-edinet

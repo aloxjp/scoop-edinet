@@ -47,7 +47,7 @@ scoopもbucketをgitでバージョン管理しています。
 
 	PS > scoop update
 
-さらに、`scoop install <app>` を実行することでインストールされているアプリケーションを更新することができます。
+さらに、`scoop update <app>` を実行することでインストールされているアプリケーションを更新することができます。
 
 ## このbucketをscoop参照先から削除
 

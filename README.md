@@ -49,6 +49,17 @@ scoopもbucketをgitでバージョン管理しています。
 
 さらに、`scoop update <app>` を実行することでインストールされているアプリケーションを更新することができます。
 
+<app>に指定するアプリケーションは下記のとおりです。
+
+<app>      | アプリケーション
+-----------|---------------
+alm        | ALM.exe
+edinet     | EDINET.exe
+gradle4    | gradle ver.4
+ojdkbuild8 | openjdk8
+pleiades   | 保全環境(Spring Boot 2.0)
+uwsc       | UWSC
+
 ## このbucketをscoop参照先から削除
 
 	PS > scoop bucket rm alox-edinet

@@ -9,43 +9,43 @@ PowerShellでインストールします。
 
 	セキュリティ上の理由から、デフォルトでスクリプトの実行が無効に設定されています。
 
-		PS > Set-ExecutionPolicy RemoteSigned
+		Set-ExecutionPolicy RemoteSigned
 
 	管理者権限のPowerShellを閉じます。
 	以降、ユーザー権限でPowerShellを起動して続行してください。
 
 1. 実行ポリシーを緩和
 
-		PS > set-executionpolicy remotesigned -scope currentuser
+		set-executionpolicy remotesigned -scope currentuser
 
 1. TLS認証を緩和
 
-		PS > [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls11
-		PS > [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-		PS > [System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true}
+		[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls11
+		[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+		[System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true}
 
 1. インストール
 
-		PS > iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+		iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 
 ## gitをインストール
 
 scoopもbucketをgitでバージョン管理しています。
 これもscoopでインストールできます。
 
-	PS > scoop install git
+	scoop install git
 
 ## このbucketをscoop参照先に追加
 
 この設定をすることで、 `scoop install <app>` でこのリポジトリにあるアプリケーションをインストールすることができるようになります。
 
-	PS > scoop bucket add alox-edinet https://github.com/aloxjp/scoop-edinet
+	scoop bucket add alox-edinet https://github.com/aloxjp/scoop-edinet
 
 ## このbucketを更新
 
 このbucketのバージョン番号が更新されている場合、下記のコマンドで更新します。
 
-	PS > scoop update
+	scoop update
 
 さらに、`scoop update <app>` を実行することでインストールされているアプリケーションを更新することができます。
 
@@ -62,5 +62,5 @@ uwsc       | UWSC
 
 ## このbucketをscoop参照先から削除
 
-	PS > scoop bucket rm alox-edinet
+	scoop bucket rm alox-edinet
 

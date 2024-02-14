@@ -41,17 +41,13 @@ scoopもbucketをgitでバージョン管理しています。
 
 	scoop bucket add alox-edinet https://github.com/aloxjp/scoop-edinet
 
-## このbucketを更新
+## このbucketのアプリケーションをインストール
 
-このbucketのバージョン番号が更新されている場合、下記のコマンドで更新します。
-
-	scoop update
-
-さらに、`scoop update <app>` を実行することでインストールされているアプリケーションを更新することができます。
+`scoop install <app>` を実行することでインストールされているアプリケーションを更新することができます。
 
 `<app>`に指定するアプリケーションは下記のとおりです。
 
-`<app>`        | アプリケーション
+`<app>`    | アプリケーション
 -----------|---------------
 alm        | ALM.exe
 edinet     | EDINET.exe
@@ -59,6 +55,14 @@ gradle4    | gradle ver.4
 ojdkbuild8 | openjdk8
 pleiades   | 保全環境(Spring Boot 2.0)
 uwsc       | UWSC
+
+## このbucketを更新
+
+このbucketのバージョン番号が更新されている場合、下記のコマンドで更新します。
+
+	scoop update
+
+さらに、`scoop update <app>` を実行することでインストールされているアプリケーションを更新することができます。
 
 ## このbucketをscoop参照先から削除
 

@@ -31,7 +31,7 @@ PowerShellでインストールします。
 ## gitをインストール
 
 scoopもbucketをgitでバージョン管理しています。
-これもscoopでインストールできます。
+これもscoopでインストールできます(既にgitがインストールされている場合、改めてインストールする必要はありません)。
 
 	scoop install git
 
